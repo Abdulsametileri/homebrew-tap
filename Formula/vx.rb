@@ -5,20 +5,20 @@
 class Vx < Formula
   desc "vX is a basic version control system"
   homepage ""
-  version "1.0.4"
+  version "1.0.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Abdulsametileri/vX/releases/download/v1.0.4/vX_1.0.4_Darwin_arm64.tar.gz"
-      sha256 "43fd4f9b11133bd63975f5c1c7055fdfb4aed4557723ea3fadc4ada135d48d19"
+      url "https://github.com/Abdulsametileri/vX/releases/download/v1.0.5/vX_1.0.5_Darwin_arm64.tar.gz"
+      sha256 "7d008397af2c3a81a47f3780dda028ece93b4d795a2e9906564b6e658e5ed14f"
 
       def install
         bin.install "vx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Abdulsametileri/vX/releases/download/v1.0.4/vX_1.0.4_Darwin_x86_64.tar.gz"
-      sha256 "17d990fbcc831d9b34bc4d924f072e73fb4a9ca82ba7bf8fb176c5a9f64606be"
+      url "https://github.com/Abdulsametileri/vX/releases/download/v1.0.5/vX_1.0.5_Darwin_x86_64.tar.gz"
+      sha256 "494c179d9d11e07303e4ab06601e38355e8077c9f04348fc78989e04f6543591"
 
       def install
         bin.install "vx"
@@ -28,16 +28,16 @@ class Vx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Abdulsametileri/vX/releases/download/v1.0.4/vX_1.0.4_Linux_arm64.tar.gz"
-      sha256 "8f4ab922b980aff01b3ff315e7e1fdc15d479c4590d739f6f02bfbaa35715766"
+      url "https://github.com/Abdulsametileri/vX/releases/download/v1.0.5/vX_1.0.5_Linux_arm64.tar.gz"
+      sha256 "f8b544461c99e02aab0206eeb0409e33a7be2c297c6fc7c7bc8468852b191665"
 
       def install
         bin.install "vx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Abdulsametileri/vX/releases/download/v1.0.4/vX_1.0.4_Linux_x86_64.tar.gz"
-      sha256 "b821d85d7daeed11f4c932b2d101ea66db0c0b9ada4177224757989cb98dbc3f"
+      url "https://github.com/Abdulsametileri/vX/releases/download/v1.0.5/vX_1.0.5_Linux_x86_64.tar.gz"
+      sha256 "26716e2faddb31bb6fe0806027f232bf223fc187e717976ccf9ee9f61bb77d7c"
 
       def install
         bin.install "vx"
