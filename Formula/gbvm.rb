@@ -5,20 +5,20 @@
 class Gbvm < Formula
   desc "Version manager for go, currently golangci-lint and mockery"
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Abdulsametileri/go-binary-version-manager/releases/download/v0.0.1/go-binary-version-manager_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "7641fd2bf8becd37ca335e3213f5e81234ad9d381279cac12f157a5b6253fb22"
+      url "https://github.com/Abdulsametileri/go-binary-version-manager/releases/download/v0.0.2/go-binary-version-manager_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "382cdf72ef3ab7ab3730fc48a714dc2d0d68f62f10fd88b5c60f310eebf915cd"
 
       def install
         bin.install "gbvm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Abdulsametileri/go-binary-version-manager/releases/download/v0.0.1/go-binary-version-manager_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "3f26b94904b395b27e0431572b1ebdc8c82f219674835c2bbd735298807cae29"
+      url "https://github.com/Abdulsametileri/go-binary-version-manager/releases/download/v0.0.2/go-binary-version-manager_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "e00b3627732cf73ca81f126110454a5c24b80effb5765a5c66f60f8fb783e125"
 
       def install
         bin.install "gbvm"
@@ -28,16 +28,16 @@ class Gbvm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Abdulsametileri/go-binary-version-manager/releases/download/v0.0.1/go-binary-version-manager_0.0.1_Linux_arm64.tar.gz"
-      sha256 "8d211ac7df5b768b32fc4d8e163032daf44f9b15979c99c0496dfa62bd2ee71b"
+      url "https://github.com/Abdulsametileri/go-binary-version-manager/releases/download/v0.0.2/go-binary-version-manager_0.0.2_Linux_arm64.tar.gz"
+      sha256 "6c201b6d4b822ea3c155dea375295bb05c9cf135aeee76df408a90f58c229618"
 
       def install
         bin.install "gbvm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Abdulsametileri/go-binary-version-manager/releases/download/v0.0.1/go-binary-version-manager_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "f73e5b11b0e967c6621f5cc96d9b5850dc402bfae469191ef6f94d93795a6559"
+      url "https://github.com/Abdulsametileri/go-binary-version-manager/releases/download/v0.0.2/go-binary-version-manager_0.0.2_Linux_x86_64.tar.gz"
+      sha256 "f4fd0e6347eefa0baae06c8936d454978e1b675e36b627120a8c2edaaffecc81"
 
       def install
         bin.install "gbvm"
